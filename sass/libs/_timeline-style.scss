@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   font-family: "Fira Sans", sans-serif;
   color: #383838;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -38,12 +39,10 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  // margin: 1em auto;
+  margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  padding: 20px 0 20px 0;
-  margin-top: -20px;
 }
 .cd-horizontal-timeline::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -53,8 +52,6 @@ Main Components
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
-  background-color: #f8f8f8;
-
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
