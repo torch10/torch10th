@@ -1,51 +1,3 @@
-.contact {
-  padding: 1em 1em 1em 1em;
-  background-color: #f8b616;
-  width: auto;
-  height: auto;
-}
-
-.contact div {
-  width: inherit;
-  text-align: center;
-}
-
-.contact div img {
-  vertical-align: middle;
-  width: 85px;
-}
-
-.icons {
-  text-align: center;
-  position: relative;
-  display: block;
-  padding: 0px;
-  text-decoration: none;
-}
-
-.icons a {
-  border-radius: 100%;
-}
-
-.icons a img {
-  width: 40px;
-  margin: auto;
-  padding: 8px;
-}
-
-.copyright {
-  margin: -10px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.copyright p {
-  display: block;
-  font-size: 13px;
-  color: white;
-  text-align: center;
-}
-
 /* --------------------------------
 
 Primary style
@@ -77,6 +29,7 @@ Main Components
 
 -------------------------------- */
 .cd-horizontal-timeline {
+  opacity: 0;
   margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -492,6 +445,54 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+.contact {
+  padding: 1em 1em 1em 1em;
+  background-color: #f8b616;
+  width: auto;
+  height: auto;
+}
+
+.contact div {
+  width: inherit;
+  text-align: center;
+}
+
+.contact div img {
+  vertical-align: middle;
+  width: 85px;
+}
+
+.icons {
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.icons a {
+  border-radius: 100%;
+}
+
+.icons a img {
+  width: 40px;
+  margin: auto;
+  padding: 8px;
+}
+
+.copyright {
+  margin: -10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.copyright p {
+  display: block;
+  font-size: 13px;
+  color: white;
+  text-align: center;
 }
 
 ol li, ul li {
