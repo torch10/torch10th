@@ -77,7 +77,6 @@ Main Components
 
 -------------------------------- */
 .cd-horizontal-timeline {
-  opacity: 0;
   margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
