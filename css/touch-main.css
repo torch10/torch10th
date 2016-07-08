@@ -1817,7 +1817,7 @@ header .icon.circled {
 /* Header */
 #header {
   position: relative;
-  background-image: url("../img/header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -2681,7 +2681,7 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -2879,7 +2879,7 @@ Main Components
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-arrow.svg) no-repeat 0 0;
+  background: url(../images/cd-arrow.svg) no-repeat 0 0;
 }
 
 .cd-timeline-navigation a.prev {
@@ -3096,4 +3096,69 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+.flex-row {
+  flex-direction: row;
+  display: inline-flex;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-item {
+  width: calc(100% /3);
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.navbar-header {
+  background: #F7B516;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-default .navbar-toggle {
+  margin-right: 0;
+  border-color: transparent;
+  float: left;
+  width: auto;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .navbar-form {
+  border-color: #e6a60c;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:active {
+  background: transparent;
+}
+
+.navbar-default .item2 {
+  color: #fff;
+}
+
+.navbar-default .item3 {
+  float: right;
+}
+
+.logo {
+  font-size: 10pt;
+  background-image: url(../images/logo.svg);
+  width: 55px;
+  height: 60px;
+  float: right;
+}
+
+.logo a {
+  text-indent: -9999px;
+  display: inline-block;
+  height: inherit;
 }
