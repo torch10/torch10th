@@ -447,6 +447,10 @@ Main Components
   }
 }
 
+ol li, ul li {
+  list-style-type: none;
+}
+
 .flex-row {
   flex-direction: row;
   display: inline-flex;
