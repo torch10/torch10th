@@ -522,12 +522,13 @@ p {
 
 .title {
   color: #F7B516;
-  font-size: 2.2em;
+  font-size: 2.6rem;
 }
 
 .subtitle {
   color: inherit;
-  font-size: 1.35em;
+  font-size: 1.8rem;
+  color: #30171E;
 }
 
 .button {
@@ -611,7 +612,7 @@ p {
 }
 
 .main-top {
-  background: url(../images/pattern.png) center;
+  background: url(../images/pattern.png) top;
   background-size: contain;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -620,8 +621,7 @@ p {
 .box-title {
   background: url(../images/bg-title.png) no-repeat;
   min-height: 135px;
-  padding-top: 25px;
-  padding-bottom: 2em;
+  padding: 25px 0 0 20px;
   margin-top: 30px;
 }
 
