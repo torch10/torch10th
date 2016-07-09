@@ -4,6 +4,7 @@
 @import libs/_slick
 @import _footer
 @import _kv
+@import compass
 
 ol,ul
   li
@@ -13,7 +14,27 @@ p
   font-size: 1.5rem
   line-height: 2.2rem
   color: $subc-01
+
+.title
+  color: $main-color
+  font-size: 2.2em
+
+.subtitle
+  color: inherit
+  font-size: 1.35em
+
+.button
+  width: 5em
+  height: auto
+  font-size: 3em
+  padding-bottom: 1em
+  margin: 0em auto
+
 //Layout
+.container-fluid
+  line-height: 1.85em
+  padding-bottom: 2em
+
 .flex-row
   flex-direction: row
   display: inline-flex
@@ -71,11 +92,11 @@ p
 .box-title
   background: url(../images/bg-title.png) no-repeat
   min-height: 135px
-  padding-left: 20px
+  //padding-left: 20px
   padding-top: 25px
+  padding-bottom: 2em
   margin-top: 30px
-.title
-  color: $main-color
+
 .box-content
   text-align: justify
   background: rgba(255, 255, 255, 0.73)

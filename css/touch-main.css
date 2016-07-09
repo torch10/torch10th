@@ -497,32 +497,17 @@ Main Components
   text-align: center;
 }
 
-#kv {
+.kv {
   margin: 0em;
   padding: 0em;
   display: block;
 }
-#kv div {
-  padding-bottom: 2em;
+.kv > div {
+  text-align: center;
 }
-#kv div img {
+.kv > div img {
   max-width: 100%;
   height: auto;
-}
-
-.info {
-  text-align: center;
-  line-height: 2.5em;
-  padding-bottom: 2em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-}
-.info h2 {
-  font-size: 3.25em;
-  color: #646464;
-}
-.info p {
-  color: inherit;
 }
 
 ol li, ul li {
@@ -533,6 +518,29 @@ p {
   font-size: 1.5rem;
   line-height: 2.2rem;
   color: #7E8387;
+}
+
+.title {
+  color: #F7B516;
+  font-size: 2.2em;
+}
+
+.subtitle {
+  color: inherit;
+  font-size: 1.35em;
+}
+
+.button {
+  width: 5em;
+  height: auto;
+  font-size: 3em;
+  padding-bottom: 1em;
+  margin: 0em auto;
+}
+
+.container-fluid {
+  line-height: 1.85em;
+  padding-bottom: 2em;
 }
 
 .flex-row {
@@ -612,13 +620,9 @@ p {
 .box-title {
   background: url(../images/bg-title.png) no-repeat;
   min-height: 135px;
-  padding-left: 20px;
   padding-top: 25px;
+  padding-bottom: 2em;
   margin-top: 30px;
-}
-
-.title {
-  color: #F7B516;
 }
 
 .box-content {
