@@ -529,6 +529,12 @@ ol li, ul li {
   list-style-type: none;
 }
 
+p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #7E8387;
+}
+
 .flex-row {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
@@ -609,4 +615,14 @@ ol li, ul li {
   padding-left: 20px;
   padding-top: 25px;
   margin-top: 30px;
+}
+
+.title {
+  color: #F7B516;
+}
+
+.box-content {
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.73);
+  padding: 10px 15px;
 }
