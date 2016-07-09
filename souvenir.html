@@ -15,6 +15,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
+      padding-bottom: 2em;
     }
     #map {
       height: 300px;
@@ -49,9 +50,9 @@
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="index.html">火把教會十周年</a></li>
         <li class="dropdown"><a href="conference.html">2016火把領袖特會</a></li>
-        <li class="dropdown"><a href="#">種子野餐音樂派對</a></li>
+        <li class="dropdown"><a href="picnic.html">種子野餐音樂派對</a></li>
         <li class="dropdown"><a href="newbook.html">無可限量新書上市</a></li>
-        <li class="dropdown"><a href="souvenir.html">十周年紀念外套</a></li>
+        <li class="dropdown"><a href="#">十周年紀念外套</a></li>
       </ul>
       </div>
     </div>
@@ -61,7 +62,7 @@
   <!-- KV start -->
   <body id="kv">
       <div>
-        <img src="images/banner-party-01.png"/>
+        <img src="images/banner-03.jpg"/>
       </div>
   </body>
   <!-- KV ends -->
@@ -70,56 +71,23 @@
   <section class="main-top">
     <div class="container-fluid">
       <div class="box-title">
-        <h2 class="title">種子野餐音樂派對</h2>
-          <span class="subtitle">Picnic/Music/Party</span>
+        <h2 class="title">十週年紀念風衣外套</h2>
+          <span class="subtitle">Some call it Torch Church,</br> we call it Home.</span>
       </div>
-      <p>種子輕揚 <b>十年有成</b> 與你分享 最快樂</br>
-         帶著野餐盒，加入我們的午後饗宴</br>
-         一起感恩 <b>我們的家</b> 十歲了！</br>
-        對象：火把教會弟兄姊妹/新朋友 </br>
-        時間：08/13(六)<b>14:00-17:00</b></br>
-        地點：花博園區 舞蝶館(台北市中山區花博公園美術園區)</br></p>
+      <p>When designing websites, you may not have the images you need at first. But you already know the sizes and inserting some placeholders can help you better seeing the layout. Don’t waste your time making dummy images for your mockup or wireframe. Fakeimg.pl is a little tool that generates images with an URL. Choose the size, the colors, even the text. It’s free and open-source.When designing websites, you may not have the images you need at first. But you already know the sizes and inserting some placeholders can help you better seeing the layout. Don’t waste your time making dummy images for your mockup or wireframe. Fakeimg.pl is a little tool that generates images with an URL. Choose the size, the colors, even the text. It’s free and open-source.
+
+
+
+</p>
+    </div>
+  <div class="button">
+    <input type="button" value="我要購買"/>
   </div>
+
 </section>
   <!-- info ends -->
 
 
-  <!-- Maps -->
-  <body>
-      <div id="map"></div>
-      <script>
-  function initMap() {
-    var myLatlng = {lat: 25.06909, lng: 121.524344};
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
-      center: myLatlng
-    });
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Click to zoom'
-    });
-
-    map.addListener('center_changed', function() {
-      // 3 seconds after the center of the map has changed, pan back to the
-      // marker.
-      window.setTimeout(function() {
-        map.panTo(marker.getPosition());
-      }, 3000);
-    });
-
-    marker.addListener('click', function() {
-      map.setZoom(16);
-      map.setCenter(marker.getPosition());
-    });
-  }
-
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdLPQ99NUP8Wj3e30pm8bA79Qijz8YjNQ&signed_in=true&callback=initMap" async defer>
-      </script>
-    </body>
   <!-- footer  -->
     <section class="contact">
       <div><img src="images/torch-logo.png"></img></div>
@@ -136,9 +104,7 @@
         <p>2016 &copy; Torch Covenant Church.</p>
     </div>
     </section>
-    <!-- footer end -->
-
-
+  <!-- footer end  -->
 
 <!--scripts-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
