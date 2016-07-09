@@ -539,11 +539,6 @@ p {
   margin: 0em auto;
 }
 
-.container-fluid {
-  line-height: 1.85em;
-  padding-bottom: 2em;
-}
-
 .flex-row {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
