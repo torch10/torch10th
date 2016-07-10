@@ -1,8 +1,14 @@
 $(document).on('ready', function() {
-  $(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
+  $('.variable-width').slick({
+  breakpoint: 1024,  
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true,
+
+});
+
 });

@@ -1,15 +1,32 @@
 .kv
-  margin: 0em
-  padding: 0em
+  margin: 0
+  padding: 5px 0
   display: block
   .banner
-    text-align: center
-    min-height: 350px
-    background-size: contain
-
-.img-1
-  background: url(../images/banner-party-02.png)
-  min-height: 350px
+    min-height: 215px
+    background-size: cover
+    +transition(all 0.3s)
+    +min-w30
+      min-height: 320px
+    +min-w40
+      min-height: 400px
+    +min-w48
+      min-height: 430px
+    +min-w60
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+.img1
+  background-image: url(../images/banner-party-01.png)
+.img2
+  background-image: url(../images/banner-party-02.png)
+  background-color: #1c1517
+.img3
+  background-image: url(../images/banner-03.jpg)
 
 #map
   height: 300px
+  text-align: center
+  img
+    max-width: 100%
+    height: auto

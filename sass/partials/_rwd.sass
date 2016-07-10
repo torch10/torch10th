@@ -1,0 +1,86 @@
+/*small devices (phones, less than 768px) */
+@mixin iphone
+	@media (max-width: 30em)
+		@content
+/* Extra small devices (phones, less than 768px) */
+@mixin pad
+	@media (max-width: 48em)
+		@content
+
+/* Medium devices (desktops, 992px and up) */
+@mixin M-devices
+	@media (max-width: 62em)
+		@content
+
+/* Large devices (large desktops, 1200px and up) */
+@mixin large-desktop
+	@media (max-width: 70em)
+		@content
+
+/*****-----------------------**********/
+@mixin min-w25
+	@media (min-width: 30em)
+		@content
+//480px(mobile)
+@mixin min-w30
+	@media (min-width: 30em)
+		@content
+//640px
+@mixin min-w40
+	@media (min-width: 40em)
+		@content
+//768px
+@mixin min-w48
+	@media (min-width: 48em)
+		@content
+//960px
+@mixin min-w60
+	@media (min-width: 60em)
+		@content
+//992px
+@mixin min-w62
+	@media (min-width: 62em)
+		@content
+//1024px
+@mixin min-w64
+	@media (min-width: 64em)
+		@content
+//1120px
+@mixin min-w70
+	@media (min-width: 70em)
+		@content
+//1200px
+@mixin min-w75
+	@media (min-width: 70em)
+		@content
+//1280px
+@mixin min-w80
+	@media (min-width: 80em)
+		@content
+
+
+/*****-----------------------**********/
+@mixin max-w30
+	@media (max-width: 30em)
+		@content
+@mixin max-w40
+	@media (max-width: 40em)
+		@content
+@mixin max-w48
+	@media (max-width: 48em)
+		@content
+@mixin max-w60
+	@media (max-width: 60em)
+		@content
+@mixin max-w62
+	@media (max-width: 62em)
+		@content
+@mixin max-w70
+	@media (max-width: 70em)
+		@content
+@mixin max-w75
+	@media (max-width: 70em)
+		@content
+@mixin max-w80
+	@media (max-width: 80em)
+		@content

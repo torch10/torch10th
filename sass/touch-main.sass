@@ -1,11 +1,29 @@
 @import compass
 @import partials/_variables
+@import partials/_rwd
 // activety model
 @import libs/_timeline-style
 @import libs/_slick
-@import libs/_slick-theme
-@import _footer
 @import _kv
+@import _footer
+// @import libs/_bootstrap
+
+
+.main-color
+  color: $main-color
+.main-deep
+  color: $main-deep
+.subc-01
+  color: $subc-01
+.subc-02
+  color: $subc-02
+
+.clrfix
+  clear: both
+  display: inline-block
+  &:after,&:before
+    clear: both
+    display: inline-block
 
 ol,ul
   li
@@ -13,6 +31,7 @@ ol,ul
 
 p
   font-size: 1.5rem
+  font-size: 15pt
   line-height: 2.2rem
   color: $subc-01
 
@@ -25,13 +44,16 @@ p
   font-size: 1.8rem
   color: $subc-02
 
-.button
-  width: 5em
-  height: auto
-  font-size: 3em
-  padding-bottom: 1em
-  margin: 0em auto
+//nva
+.navbar-default
+  .navbar-nav
+    >li>a
+      &::hover,&:focus
+        color: $main-color
+        +transition(all 0.3s)
 
+.navbar
+  margin-bottom: 0
 //Layout
 .flex-row
   flex-direction: row
@@ -87,6 +109,14 @@ p
   background-size: contain
   min-height: 400px
   background-repeat: no-repeat
+.box-wrap
+  +min-w48
+    width: 500px
+    margin: 3rem auto
+    padding: 2px 15px
+    background: rgba(85, 85, 85, 0.06)
+    +box-shadow(1px 2px 2px rgba(119, 119, 119, 0.17))
+
 .box-title
   background: url(../images/bg-title.png) no-repeat
   min-height: 135px
@@ -96,4 +126,66 @@ p
 .box-content
   text-align: justify
   background: rgba(255, 255, 255, 0.73)
-  padding: 10px 15px
+  padding: 10px 15px 25px
+  +min-w48
+    background: transparent
+  .top
+    font-family: "Playfair Display", serif
+    color: #fff
+    padding: 15px
+    display: inline-block
+    font-size: 1.8rem
+    line-height: 1.6
+    background: $main-color
+    box-shadow: 4px 4px 0px 1px $subc-01
+    span
+      font-size: 2.6rem
+      font-size: 1.8rem
+      display: block
+  .subtitle
+    font-family: "Playfair Display", serif
+    margin-top: 15px
+    color: $subc-01
+    line-height: 1.4
+    border-bottom: 2px solid $main-color
+    padding-bottom: 3px
+  ul
+    span
+      color: $main-color
+    li
+      margin-bottom: 5px
+    ul
+      padding-left: 43px
+
+//slideshow
+.slick-dots
+  display: block
+  text-align: center
+  li
+    display: inline-block
+    button
+      background: none
+      border: none
+      +border-radius(100%)
+.slick-arrow
+  width: 50px
+  height: 50px
+  padding: 5px
+  cursor: pointer
+  border: 0
+  outline: none
+  background: rgba(255, 252, 246, 0.2)
+  display: block
+  position: absolute
+  top: 35%
+  z-index: 20
+  +border-radius(100%)
+  +min-w40
+    width: 80px
+    height: 80px
+
+.slick-next
+  right: 0
+
+.slick-prev
+  left: 0

@@ -1,38 +1,3 @@
-
-/* --------------------------------
-
-Primary style
-
--------------------------------- */
-
-*, *::after, *::before {
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font: {
-		size: 1.6rem;
-		family: $primary-font; // variables inside partials > _variables.scss
-	}
-	color: $color-1;
-	background-color: $color-4;
-}
-
-a {
-	color: $color-2;
-	text-decoration: none;
-}
-
-/* --------------------------------
-
-Main Components
-
--------------------------------- */
-
 .cd-horizontal-timeline {
 	opacity: 0;
 	margin: 2em auto;
