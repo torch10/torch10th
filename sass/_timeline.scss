@@ -1,3 +1,5 @@
+@import: "partials/_variables";
+
 .cd-horizontal-timeline {
 	opacity: 0;
 	margin: 2em auto;
@@ -40,7 +42,7 @@
 
 		&::before {
 			left: 0;
-	    	@include background-image(linear-gradient(to right,$color-4, rgba($color-4, 0)));
+	    	@include background-image(linear-gradient(to right,$color-3, rgba($color-3, 0)));
 		}
 
 		&::after {
@@ -120,7 +122,8 @@
 	}
 
 	@include MQ(L) {
-		margin: 6em auto;
+		margin: 0 auto;
+		padding-top: 25px;
 
 		&::before {
 			/* never visible - this is used in jQuery to check the current MQ */
@@ -256,7 +259,7 @@
 	@include MQ(M) {
 
 		h2 {
-			font-size: 7rem;
+			font-size: 4rem;
 		}
 
 		em {
