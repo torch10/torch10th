@@ -34,7 +34,21 @@ p
   color: $subc-01
   letter-spacing: 0.1rem
 
-
+.btn-sale
+  text-align: center
+  font-family: 'NotoSans'
+  a
+    background: $white
+    color: $subc-01
+    padding: 10px 30px
+    border: 2px solid rgba(137,137,137,0.5)
+    +border-radius(35px)
+    font-size: 2rem
+    +transition(all 0.4s)
+    &:hover
+      border-color: $main-color
+      color: $white
+      background: $main-color
 //buttons
 .btn-default
   color: #fff
@@ -42,14 +56,16 @@ p
   box-shadow: 1px 1px 1px $main-deep
 .title
   color: $main-color
-  font-size: 2.6rem
-
+  font-size: 2.4rem
+  +min-w48
+    font-size: 2.6rem
 .subtitle
   color: inherit
   font-size: 1.8rem
   color: $subc-02
 
 //nav
+
 .navbar
   border: transparent
   padding-left: 0
@@ -58,22 +74,29 @@ p
   //navbar > ul
   .navbar-nav
     padding-top: 0
-    margin: 0 -15px
-    +min-w48
+    margin: 0 -14px
+    +min-w60
+      margin: 0 0 0 -15px
+    +min-w64
+      margin: 5px 0 0 25px
       padding-top: 5px
-      width: 80%
-      float: none
+      float: left
+
+    +min-w75
+      margin-left: 15%
     li
       a
         color: $white
         +transition(all 0.6s)
-      &::hover
-        color: $main-color
-        text-shadow: 1px 1px 1px $subc-02
-        background-color: rgba(238, 238, 238, 0.38)
+        +min-w64
+          letter-spacing: 0.1rem
     .active
       a
         color: $main-color
+    a:hover
+      text-shadow: 1px 1px 1px $subc-02
+      color: $main-color
+      background: transparent
 //Layout
 #header
   // background: url(http://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/11/24014743/HEADER-3_June-July16_Web-Banner_1500x1000px.jpg)
@@ -85,7 +108,9 @@ p
   //timeline
   .cd-horizontal-timeline
     margin: 0 0
-    padding-top: 6rem
+    padding-top: 0rem
+    +min-w60
+      padding-top: 6rem
     .events
       a
         &::after
@@ -99,35 +124,45 @@ p
     position: relative
     z-index: 1
     display: inline-block
-    margin-top: 5%
+    margin-top: 0
     min-height: 30rem
+    +min-w30
+      margin-top: 5%
     h2
       color: $main-color
       text-align: justify
+      font-size: 1.8rem
+      +min-w48
+        font-size: 2.6rem
     em,p
       color: #fff
+      text-shadow: 1px 1px 0px #000
       // font-family: 'NotoSans'
 
   .goto
     a
       text-decoration: none
-      background-color: rgba(255, 255, 255, 0.73)
+      background-color: rgba(255, 255, 255, 0.5)
       box-shadow: 0px 3px 3px #333
-      color: #666
-      line-height: 6.5em
+      color: #233445
+      border: 2px solid #fff
+      line-height: 40px
       text-align: center
       font-size: 1.5rem
 
       display: block
       position: relative
-      margin: 5rem auto 0
-      width: 100px
-      height: 100px
+      margin: -5rem auto 0
+      width: 120px
+      height: 45px
       padding: 0
-      +border-radius(100%)
+      z-index: 16
+      +border-radius(20px)
       +transition(all 0.3s)
+      +min-w60
+        margin: 5rem auto 0
       &:hover
-        background: $main-color
+        background: rgba(255, 255, 255, 0.5)
         color: $white
 
 
@@ -152,7 +187,7 @@ p
     background: #1c1517
     margin-bottom: 0
     .logo
-      background-color: #f7b516
+      background-color: none
       background-repeat: no-repeat
       width: 45px
       height: 50px
@@ -161,11 +196,13 @@ p
       padding: 6px
 .navbar-header
   font-family: 'NotoSans'
-  background: $main-color
+  background: none
+  border-top: 3px solid $main-color
   padding: 0
   margin: 0
   +min-w48
     background: transparent
+    border-top: transparent
   .item2
     color: #fff
     width: 80%
@@ -204,16 +241,18 @@ p
   background: url(../images/pattern.png) top
   background-size: contain
   min-height: 400px
+  padding-bottom: 25px
   background-repeat: no-repeat
   +min-w48
     background-repeat: repeat
 .box-wrap
-  +min-w48
+  width: auto
+  +min-w60
     width: 940px
-    margin: 3rem auto
-    padding: 2px 15px 25px
+    margin: 3rem auto 1rem
+    padding: 15px
     background: rgba(85, 85, 85, 0.06)
-    +box-shadow(1px 2px 2px rgba(119, 119, 119, 0.17))
+    +box-shadow(1px 2px 3px rgba(195, 195, 195, 0.88))
 
 .box-title
   font-family: "Playfair Display", serif
@@ -225,7 +264,7 @@ p
 .box-content
   text-align: justify
   background: rgba(255, 255, 255, 0.7)
-  padding: 10px 15px 25px
+  padding: 25px
   font-family: 'NotoSans'
   +min-w48
     font-size: 1.6rem
@@ -253,9 +292,13 @@ p
       color: $main-color
     li
       margin-bottom: 5px
+      +min-w48
+        margin-bottom: 10px
     ul
       padding-left: 43px
 
+.box-btm
+  margin: 0 0px
 
 .slick-dots
   display: block
@@ -297,11 +340,10 @@ p
     width: 100%
     min-height: 280px
     +min-w60
-      width: 1170px
       margin: 0 auto 25px
     iframe
-      height: 315px
       width: 100%
+      height: 315px
       +min-w60
         width: 100%
         height: 500px

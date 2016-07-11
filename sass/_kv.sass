@@ -17,10 +17,12 @@
   margin: 0
   display: block
   .banner
-    min-height: 215px
+    min-height: 180px
     background-size: cover
     padding: 5px 0
     +transition(all 0.3s)
+    +min-w25
+      min-height: 180px
     +min-w30
       min-height: 320px
     +min-w40

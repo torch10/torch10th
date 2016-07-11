@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <title>火把教會十周年-Home</title>
@@ -12,9 +12,10 @@
     <meta property="og:image:width" content="630">
     <meta property="og:image:height" content="315">
     <meta property="og:type" content="website">
-    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/js-image-slider.css">
     <link rel="stylesheet" href="css/touch-main.css">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 </head>
@@ -28,7 +29,7 @@
                     <div class="navbar-header">
                         <div class="flex-row">
                             <div class="flex-item item1">
-                                <h2 class="logo"><a href="#">火把十周年活動</a></h2>
+                                <h2 class="logo"><a href="index.html">火把十周年活動</a></h2>
                             </div>
                             <div class="flex-item item2">火把十周年特會</div>
                             <div class="flex-item item3">
@@ -214,34 +215,23 @@
                 </article>
             </section>
             <!-- carousel -->
-            <section class="carousel">
-              <article class="container-fulid">
-                <div class="variable-width slider">
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QScoyuqk8kM?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1TRM8ppvmCI?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QEF-rO8OAKA?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KM_9gGp8u04?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DMtGq_k4kAg?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Uf2DHyTulI?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7g5X2aOa_Q8?list=PLOj8BXSwCqBjhIH7GpxBZIK70yqMBMvPB" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </div>
-              </article>
-            </section>
-        </div>
+            <div id="sliderFrame">
+                <div id="slider">
+                    <a href="http://www.menucool.com/video-slider">
+                        <img src="images/image-slider-1.jpg" alt="" />
+                    </a>
+                    <a class="video" href="http://vimeo.com/18560206">
+                        <b data-src="images/image-slider-2.jpg">Vimeo</b>
+                    </a>
+                    <a class="video" href="http://www.youtube.com/watch?v=P0G_2tiivxE">
+                        <b data-src="images/image-slider-3.jpg">Image Slider</b>
+                    </a>
+                    <a class="lazyImage" href="images/image-slider-4.jpg">Slide 4</a>
+                    <a class="video" href="http://vimeo.com/18867695" data-autovideo="1">
+                        <b data-src="images/image-slider-5.jpg">Slide 5</b>
+                    </a>
+                </div>
+            </div>
         <div class="clrfix"></div>
         <!-- footer  -->
         <section class="contact">
@@ -263,16 +253,12 @@
     </div>
 
     <!--scripts-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <!--timeline-->
     <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- Resource jQuery -->
-    <script src="js/slick.min.js"></script>
-    <!-- Resource jQuery -->
     <script src="js/main-self.js"></script>
-    <!-- Resource jQuery -->
+    <!-- <script src="js/mcVideoPlugin.js"></script>
+    <script src="js/js-image-slider.js"></script> -->
     <!--scripts end-->
 </body>
 
