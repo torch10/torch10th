@@ -42,12 +42,12 @@
 
 		&::before {
 			left: 0;
-	    	// @include background-image(linear-gradient(to right,$color-3, rgba($color-3, 0)));
+	    	@include background-image(linear-gradient(to right,rgba(248, 248, 248, 0.04), rgba($color-3, 0)));
 		}
 
 		&::after {
 			right: 0;
-			// @include background-image(linear-gradient(to left,$color-4, rgba($color-4, 0)));
+			@include background-image(linear-gradient(to left,rgba(248, 248, 248, 0.04), rgba($color-3, 0)));
 		}
 	}
 
@@ -103,21 +103,21 @@
 		}
 
 		.no-touch &:hover::after {
-			background-color: $color-2;
-			border-color: $color-2;
+			background-color: $main-color;
+			border-color: $main-color;
 		}
 
 		&.selected {
 			pointer-events: none;
 
 			&::after {
-				background-color: $color-2;
-				border-color: $color-2;
+				background-color: $main-color;
+				border-color: $main-color;
 			}
 		}
 
 		&.older-event::after {
-			border-color: $color-2;
+			border-color: $main-color;
 		}
 	}
 

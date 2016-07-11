@@ -1,5 +1,14 @@
 $(document).on('ready', function() {
-  $('.multiple-items').slick({
+  $(".goto").click(function() {
+    $('body,html').animate({
+        scrollTop: $("#here").offset().top
+      }, 1000);
+  });
+
+});
+
+$(document).on('ready', function() {
+  $('.variable-width').slick({
   breakpoint: 1024,
   dots: true,
   infinite: true,
@@ -10,6 +19,6 @@ $(document).on('ready', function() {
   autoplay: false,
   });
 
-
   $('.single-item').slick();
+
 });

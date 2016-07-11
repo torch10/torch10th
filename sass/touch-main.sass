@@ -1,6 +1,5 @@
 @import compass
 @import partials/_font-awesome
-@import partials/_font-material
 @import partials/_variables
 @import partials/_rwd
 // activety model
@@ -33,6 +32,8 @@ p
   font-size: 1.5rem
   line-height: 2.2rem
   color: $subc-01
+  letter-spacing: 0.1rem
+
 
 //buttons
 .btn-default
@@ -50,12 +51,13 @@ p
 
 //nav
 .navbar
-  // border-bottom: 1px solid rgba(247, 247, 247, 0.44)
-
+  border: transparent
+  padding-left: 0
+  padding-right: 0
   //navbar > ul
   .navbar-nav
     padding-top: 0
-    margin: 0 0 0 0
+    margin: 0 -15px
     +min-w48
       padding-top: 5px
       width: 80%
@@ -65,17 +67,17 @@ p
       a
         color: $white
         +transition(all 0.6s)
-
-        &::hover,&:focus
-          color: rgba(238, 238, 238, 0.55)
-          background: transparent
+      &::hover
+        color: $main-color
+        text-shadow: 1px 1px 1px $subc-02
+        background-color: rgba(238, 238, 238, 0.38)
     .active
       a
         color: $main-color
 //Layout
 #header
   // background: url(http://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/11/24014743/HEADER-3_June-July16_Web-Banner_1500x1000px.jpg)
-  background: url(../images/bg01.jpg)
+  background: url(../images/bg02.jpg)
   background-size: cover
   background-attachment: fixed
   height: 100vh
@@ -84,21 +86,34 @@ p
   .cd-horizontal-timeline
     margin: 0 0
     padding-top: 6rem
+    .events
+      a
+        &::after
+          border: 2px solid $main-color
+          background-color: $main-color
+
+    .events-wrapper
+      &::after,&::before
+        background-image: none
   .events-content
     position: relative
     z-index: 1
     display: inline-block
     margin-top: 5%
+    min-height: 30rem
     h2
       color: $main-color
+      text-align: justify
     em,p
       color: #fff
+      // font-family: 'NotoSans'
 
   .goto
     a
       text-decoration: none
       background-color: rgba(255, 255, 255, 0.73)
-      color: $subc-01
+      box-shadow: 0px 3px 3px #333
+      color: #666
       line-height: 6.5em
       text-align: center
       font-size: 1.5rem
@@ -110,7 +125,7 @@ p
       height: 100px
       padding: 0
       +border-radius(100%)
-      +transition(background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out)
+      +transition(all 0.3s)
       &:hover
         background: $main-color
         color: $white
@@ -196,6 +211,8 @@ p
   text-align: justify
   background: rgba(255, 255, 255, 0.73)
   padding: 10px 15px 25px
+  font-family: 'NotoSans'
+
   +min-w48
     background: #f5f5f5
   .top
@@ -213,10 +230,10 @@ p
       display: block
   .subtitle
     margin: 15px 0
-    color: $subc-01
+    color: $subc-02
     line-height: 1.4
     border-bottom: 2px solid $main-color
-    padding-bottom: 3px
+    padding-bottom: 10px
   ul
     span
       color: $main-color
@@ -225,27 +242,6 @@ p
     ul
       padding-left: 43px
 
-.single-item
-  text-align: center
-  .video
-    width: 100%
-    min-height: 280px
-    +min-w60
-      width: 1200px
-      margin: 0 auto 25px
-    iframe
-      width: 100%
-      +min-w60
-        width: 100%
-        height: 500px
-        padding: 0 10rem
-//slideshow
-.single-item
-  .video
-    width: 100%
-    +min-w48
-      width: 935px
-      margin: 0 auto
 
 .slick-dots
   display: block
@@ -279,3 +275,33 @@ p
 
 .slick-prev
   left: 0
+
+//slideshow
+.single-item
+  text-align: center
+  .video
+    width: 100%
+    min-height: 280px
+    +min-w60
+      width: 1170px
+      margin: 0 auto 25px
+    iframe
+      height: 315px
+      width: 100%
+      +min-w60
+        width: 100%
+        height: 500px
+        padding: 0 10rem
+
+
+.carousel
+  // background: url(../images/header.jpg)
+  padding-top: 5px
+.slick-dots
+  margin-bottom: 15px
+  li
+    button
+      background: #ddd
+  .slick-active
+    button
+      background: $main-color
