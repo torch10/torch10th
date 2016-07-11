@@ -9,7 +9,6 @@
 @import _kv
 @import _footer
 
-
 .main-color
   color: $main-color
 .main-deep
@@ -35,6 +34,11 @@ p
   line-height: 2.2rem
   color: $subc-01
 
+//buttons
+.btn-default
+  color: #fff
+  background: $main-color
+  box-shadow: 1px 1px 1px $main-deep
 .title
   color: $main-color
   font-size: 2.6rem
@@ -44,22 +48,81 @@ p
   font-size: 1.8rem
   color: $subc-02
 
-//nva
-.navbar-default
-  .navbar-nav
-    >li>a
-      &::hover,&:focus
-        color: $main-color
-        +transition(all 0.3s)
-
+//nav
 .navbar
-  margin-bottom: 0
+  // border-bottom: 1px solid rgba(247, 247, 247, 0.44)
+
+  //navbar > ul
+  .navbar-nav
+    padding-top: 0
+    margin: 0 0 0 0
+    +min-w48
+      padding-top: 5px
+      width: 80%
+      float: left
+      margin: 0px 0 0 10rem
+    li
+      a
+        color: $white
+        +transition(all 0.6s)
+
+        &::hover,&:focus
+          color: rgba(238, 238, 238, 0.55)
+          background: transparent
+    .active
+      a
+        color: $main-color
 //Layout
+#header
+  // background: url(http://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/11/24014743/HEADER-3_June-July16_Web-Banner_1500x1000px.jpg)
+  background: url(../images/bg01.jpg)
+  background-size: cover
+  background-attachment: fixed
+  height: 100vh
+  min-height: 40em
+  //timeline
+  .cd-horizontal-timeline
+    margin: 0 0
+    padding-top: 6rem
+  .events-content
+    position: relative
+    z-index: 1
+    display: inline-block
+    margin-top: 5%
+    h2
+      color: $main-color
+    em,p
+      color: #fff
+
+  .goto
+    a
+      text-decoration: none
+      background-color: rgba(255, 255, 255, 0.73)
+      color: $subc-01
+      line-height: 6.5em
+      text-align: center
+      font-size: 1.5rem
+
+      display: block
+      position: relative
+      margin: 5rem auto 0
+      width: 100px
+      height: 100px
+      padding: 0
+      +border-radius(100%)
+      +transition(background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out)
+      &:hover
+        background: $main-color
+        color: $white
+
+
 .flex-row
   flex-direction: row
   display: inline-flex
   width: 100%
   vertical-align: middle
+  +min-w48
+    width: 200%
 .flex-row-reverse
   flex-direction: row-reverse
 .flex-item
@@ -73,34 +136,37 @@ p
   background: $main-color
   padding: 0
   margin: 0
-
-.navbar-default
-  .navbar-toggle
-    margin-right: 0
-    border-color: transparent
-    float: left
-    width: auto
-    .icon-bar
-      background-color: #fff
-    .navbar-form
-      border-color: $main-deep
-    &:hover,&:focus,&:active
-      background: transparent
+  +min-w48
+    background: transparent
   .item2
     color: #fff
     width: 80%
-  .item3
-    float: right
+    +min-w48
+      display: none
+
+.navbar-toggle
+  margin-right: 0
+  border-color: transparent
+  float: right
+  width: auto
+  .icon-bar
+    background-color: #fff
+    border-bottom: 3px solid #fff
+  .navbar-form
+    border-color: $main-deep
+  &:hover,&:focus,&:active
+    background: transparent
+
 .logo
   font-size: 10pt
   background: url(../images/logo.svg) no-repeat
   width: 50px
   height: 50px
-  float: right
-  margin: 5px 5px 0 0
+  float: left
+  margin: 5px 0 0 5px
   a
     text-indent: -9999px
-    display: inline-block
+    display: block
     height: inherit
 
 //boxs
@@ -113,13 +179,14 @@ p
     background-repeat: repeat
 .box-wrap
   +min-w48
-    width: 500px
+    width: 940px
     margin: 3rem auto
     padding: 2px 15px
     background: rgba(85, 85, 85, 0.06)
     +box-shadow(1px 2px 2px rgba(119, 119, 119, 0.17))
 
 .box-title
+  font-family: "Playfair Display", serif
   background: url(../images/bg-title.png) no-repeat
   min-height: 135px
   padding: 25px 0 0 20px
@@ -145,8 +212,7 @@ p
       font-size: 1.8rem
       display: block
   .subtitle
-    font-family: "Playfair Display", serif
-    margin-top: 15px
+    margin: 15px 0
     color: $subc-01
     line-height: 1.4
     border-bottom: 2px solid $main-color
@@ -166,18 +232,20 @@ p
     min-height: 280px
     +min-w60
       width: 1200px
-      min-height: 400px
       margin: 0 auto 25px
     iframe
       width: 100%
       +min-w60
         width: 100%
+        height: 500px
         padding: 0 10rem
 //slideshow
 .single-item
   .video
-    width: 935px
-    margin: 0 auto
+    width: 100%
+    +min-w48
+      width: 935px
+      margin: 0 auto
 
 .slick-dots
   display: block
@@ -188,6 +256,7 @@ p
       background: none
       border: none
       +border-radius(100%)
+
 .slick-arrow
   width: 50px
   height: 50px
@@ -210,17 +279,3 @@ p
 
 .slick-prev
   left: 0
-
-//
-.cd-horizontal-timeline
-  margin: 0 0
-  padding-top: 6rem
-
-.goto
-  display: inline-block
-  border: 3px solid $main-color
-  color: $main-color
-  +border-radius(15px)
-  &:hover
-    background: &main-color
-    color: #fff

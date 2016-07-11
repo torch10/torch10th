@@ -4,6 +4,7 @@ $color-2: #7b9d6f; // Highland
 $color-3: #ffffff; // White
 $color-4: #554256; // Alabaster
 $color-5: #301c41;
+$white: #fff;
 
 // colors
 $main-color: #F7B516;
@@ -11,8 +12,51 @@ $main-deep: #e6a60c;
 $subc-01: #7E8387;
 $subc-02: #30171E;
 
-
-
 // fonts
 $primary-font: 'Fira Sans', sans-serif;
 $secondary-font: 'Playfair Display', serif;
+$third-font: 'NotoSans', serif;
+
+
+//animation
+@-webkit-keyframes FADEY {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.a-1 {
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+}
+
+
+.a-2 {
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+}
+
+
+.a-3 {
+	-webkit-opacity: 0;
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1.8s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+}
+
+
+.a-4 {
+	-webkit-opacity: 0;
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1.8s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+}

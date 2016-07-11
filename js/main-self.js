@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  $('.variable-width').slick({
+  $('.multiple-items').slick({
   breakpoint: 1024,
   dots: true,
   infinite: true,
