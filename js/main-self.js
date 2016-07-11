@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-  $(".goto").click(function(e) {
-    e.preventdefault();
-    $(".wrapper").animate({
+  $(".goto>a").click(function(e) {
+    e.preventDefault();
+    $("body").animate({
         scrollTop: $("#here").offset().top
       }, 1000);
   });
