@@ -113,8 +113,9 @@ p
       padding-top: 6rem
     .events
       a
+        font-size: 1.6rem
         &::after
-          border: 2px solid $main-color
+          border: 1px solid #152846
           background-color: $main-color
 
     .events-wrapper
@@ -152,15 +153,19 @@ p
 
       display: block
       position: relative
-      margin: -9rem auto 0
+      margin: -10rem auto 0
       width: 120px
       height: 45px
       padding: 0
       z-index: 16
       +border-radius(20px)
       +transition(all 0.3s)
-      +min-w70
-        margin: 5rem auto 0
+      +min-w80
+        margin: -5rem auto 0
+      +min-w86
+        margin: -9rem auto 0
+      +min-w90
+        margin: 0 auto 0
       &:hover
         background: rgba(255, 255, 255, 0.5)
         color: $white
