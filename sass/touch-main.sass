@@ -270,13 +270,16 @@ p
   +min-w48
     background-repeat: repeat
 .box-wrap
+  margin-top: 15px
+  padding: 10px
   width: auto
+  background: rgba(85, 85, 85, 0.06)
+  +box-shadow(1px 2px 3px rgba(195, 195, 195, 0.88))
+  +min-w48
+    padding: 15px
   +min-w60
     width: 940px
     margin: 3rem auto 1rem
-    padding: 15px
-    background: rgba(85, 85, 85, 0.06)
-    +box-shadow(1px 2px 3px rgba(195, 195, 195, 0.88))
 
 .box-title
   font-family: "Playfair Display", serif
@@ -288,7 +291,7 @@ p
 .box-content
   text-align: justify
   background: rgba(255, 255, 255, 0.7)
-  padding: 25px
+  padding: 20px
   font-family: 'NotoSans'
   +min-w48
     font-size: 1.6rem
@@ -375,21 +378,24 @@ p
   left: 0
 
 //slideshow
-.a-4
-  background-color: black
-  .single-item
-    text-align: center
-    .video
+.single-item
+  text-align: center
+  background: #000
+  margin-bottom: 25px
+  .video
+    width: 100%
+    min-height: 280px
+    +min-w60
+      margin: 0 auto 25px
+    iframe
       width: 100%
-      min-height: 280px
-      +min-w60
-        margin: 0 auto 25px
-      iframe
-        width: 100%
+      height: 350px
+      +min-w48
         height: 500px
-        +min-w70
-          width: 100%
-          padding: 0 10rem
+      +min-w70
+        width: 100%
+        padding: 0 10rem
+
 
 .carousel
   // background: url(../images/header.jpg)
@@ -402,9 +408,6 @@ p
   .slick-active
     button
       background: $main-color
-
-.sliders
-  padding-top: 2em
 
 
 //map
