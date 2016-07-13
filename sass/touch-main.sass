@@ -375,20 +375,21 @@ p
   left: 0
 
 //slideshow
-.single-item
-  text-align: center
-  .video
-    width: 100%
-    min-height: 280px
-    +min-w60
-      margin: 0 auto 25px
-    iframe
+.a-4
+  background-color: black
+  .single-item
+    text-align: center
+    .video
       width: 100%
-      height: 500px
-      +min-w70
+      min-height: 280px
+      +min-w60
+        margin: 0 auto 25px
+      iframe
         width: 100%
-        padding: 0 10rem
-
+        height: 500px
+        +min-w70
+          width: 100%
+          padding: 0 10rem
 
 .carousel
   // background: url(../images/header.jpg)
@@ -401,6 +402,9 @@ p
   .slick-active
     button
       background: $main-color
+
+.sliders
+  padding-top: 2em
 
 
 //map
