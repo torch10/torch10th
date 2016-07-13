@@ -94,51 +94,22 @@
             </section>
             <!-- info ends -->
             <!-- Map -->
-            <div id="map">
-                <script>
-                    function initMap() {
-                        var myLatlng = {
-                            lat: 24.9724186,
-                            lng: 121.5307419
-                        };
+            <section>
+            <div class="iframe-rwd">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5874.2775041222585!2d121.52465691771722!3d25.069559411328164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe43f18cb659da7d5!2z6Iie6J226aSo!5e0!3m2!1szh-TW!2stw!4v1468340117996" width="605" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 16,
-                            center: myLatlng
-                        });
 
-                        var marker = new google.maps.Marker({
-                            position: myLatlng,
-                            map: map,
-                            title: 'Click to zoom'
-                        });
-
-                        map.addListener('center_changed', function() {
-                            // 3 seconds after the center of the map has changed, pan back to the
-                            // marker.
-                            window.setTimeout(function() {
-                                map.panTo(marker.getPosition());
-                            }, 3000);
-                        });
-
-                        marker.addListener('click', function() {
-                            map.setZoom(16);
-                            map.setCenter(marker.getPosition());
-                        });
-                    }
-                </script>
-                </script>
-                <div class="clrfix"></div>
             </div>
+            </section>
             <!-- footer  -->
             <section class="contact">
                 <div><img src="images/torch-logo.png">
                 </div>
                 <ul class="icons">
-                    <a href="http://www.torchchurch.com/"><img src="images/icon/home.png"></a>
-                    <a href="https://www.facebook.com/torchfans/"><img src="images/icon/facebook.png"> </a>
-                    <a href="https://www.youtube.com/user/TorchChurchMedia"><img src="images/icon/youtube.png"> </a>
-                    <a href="https://www.instagram.com/torchchurch/"><img src="images/icon/instagram.png"> </a>
+                    <a target="_blank" href="http://www.torchchurch.com/"><img src="images/icon/home.png"></a>
+                    <a target="_blank" href="https://www.facebook.com/torchfans/"><img src="images/icon/facebook.png"></a>
+                    <a target="_blank" href="https://www.youtube.com/user/TorchChurchMedia"><img src="images/icon/youtube.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/torchchurch/"><img src="images/icon/instagram.png"></a>
                 </ul>
                 <!-- Copyright -->
                 <div class="copyright">
@@ -150,7 +121,6 @@
     </div>
 </body>
 <!--scripts-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdLPQ99NUP8Wj3e30pm8bA79Qijz8YjNQ&signed_in=true&callback=initMap" async defer></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <!--scripts end-->
 </html>
