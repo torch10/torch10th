@@ -1,5 +1,4 @@
 @import compass
-@import partials/_font-awesome
 @import partials/_variables
 @import partials/_rwd
 // activety model
@@ -49,6 +48,25 @@ p
       border-color: $main-color
       color: $white
       background: $main-color
+.btn
+  +transition(all 0.3s)
+  &:hover
+    text-decoration: none
+  &:focus
+    color: #fff
+.btn-l
+  font-size: 1.7rem
+
+.btn-c1
+  background: #f7b516
+  box-shadow: 1px 1px 1px #b18009
+  color: #fff
+  &:hover
+    background: #ffce02
+    color: #fff
+
+
+
 //buttons
 .btn-default
   color: #fff
@@ -245,7 +263,7 @@ p
 //boxs
 
 .main-top
-  // background: url(../images/pattern.png) top
+  background: url(../images/pattern.png) top
   min-height: 400px
   padding-bottom: 25px
   background-repeat: no-repeat
