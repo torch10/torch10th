@@ -113,8 +113,9 @@ p
       padding-top: 6rem
     .events
       a
+        font-size: 1.6rem
         &::after
-          border: 2px solid $main-color
+          border: 1px solid #152846
           background-color: $main-color
 
     .events-wrapper
@@ -137,33 +138,36 @@ p
     em,p
       color: #fff
       text-shadow: 1px 1px 0px #000
-      // font-family: 'NotoSans'
 
-  .goto
-    a
-      text-decoration: none
-      background-color: rgba(255, 255, 255, 0.5)
-      box-shadow: 0px 3px 3px #333
-      color: #233445
-      border: 2px solid #fff
-      line-height: 40px
-      text-align: center
-      font-size: 1.5rem
+.goto
+  a
+    text-decoration: none
+    background-color: rgba(255, 255, 255, 0.5)
+    box-shadow: 0px 3px 3px #333
+    color: #233445
+    border: 2px solid #fff
+    line-height: 40px
+    text-align: center
+    font-size: 1.5rem
 
-      display: block
-      position: relative
+    display: block
+    position: relative
+    margin: -7rem auto 0
+    width: 120px
+    height: 45px
+    padding: 0
+    z-index: 16
+    +border-radius(20px)
+    +transition(all 0.3s)
+    +min-w80
       margin: -5rem auto 0
-      width: 120px
-      height: 45px
-      padding: 0
-      z-index: 16
-      +border-radius(20px)
-      +transition(all 0.3s)
-      +min-w60
-        margin: 5rem auto 0
-      &:hover
-        background: rgba(255, 255, 255, 0.5)
-        color: $white
+    +min-w86
+      margin: -9rem auto 0
+    +min-w90
+      margin: 0 auto 0
+    &:hover
+      background: rgba(255, 255, 255, 0.5)
+      color: $white
 
 
 .flex-row
@@ -237,6 +241,7 @@ p
     height: inherit
 
 //boxs
+
 .main-top
   background: url(../images/pattern.png) top
   background-size: contain
@@ -310,6 +315,23 @@ p
       border: none
       +border-radius(100%)
 
+.info
+  .box-wrap
+    width: auto
+    margin: 3rem auto 1rem
+    padding: 15px
+    background: rgba(85, 85, 85, 0.06)
+    +box-shadow(1px 2px 3px rgba(195, 195, 195, 0.88))
+    +min-w48
+      margin: 0rem auto 1rem
+
+.box-read
+  margin-top: 3rem
+.box-read.box-btm
+  padding: 25px 0
+  margin: 3rem 0 0
+  background: #ddd
+
 .slick-arrow
   width: 50px
   height: 50px
@@ -343,10 +365,9 @@ p
       margin: 0 auto 25px
     iframe
       width: 100%
-      height: 315px
-      +min-w60
+      height: 500px
+      +min-w70
         width: 100%
-        height: 500px
         padding: 0 10rem
 
 
