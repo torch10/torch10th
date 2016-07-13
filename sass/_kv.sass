@@ -22,13 +22,15 @@
   margin: 0
   display: block
   .banner
-    min-height: 180px
     background-size: cover
+    min-height: 180px
     padding: 5px 0
     +transition(all 0.3s)
+    +min-w25
+      min-height: 218px
     +min-w30
       min-height: 270px
-      background-size: contain
+      background-size: cover
     +min-w40
       min-height: 355px
     +min-w48
