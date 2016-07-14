@@ -58,7 +58,7 @@ p
   &:hover
     text-decoration: none
   &:focus
-    color: #fff
+    color: #fff08／14（日）17：00－21：00
 .btn-l
   font-size: 1.7rem
 
@@ -305,15 +305,19 @@ p
     padding: 25px 0 0 20px
   span
     display: block
+    margin-top: 5px
   .title
-    margin-top: 10px
+    margin-top: 30px
+    +min-w48
+      margin-top: 10px
 
 .box-content
   text-align: justify
   background: rgba(255, 255, 255, 0.7)
-  padding: 20px
   font-family: 'NotoSans'
+  padding: 10px
   +min-w48
+    padding: 20px
     font-size: 1.6rem
   .top
     font-family: "Playfair Display", serif
@@ -332,19 +336,39 @@ p
     margin: 15px 0
     color: $subc-02
     line-height: 1.4
+    letter-spacing: 0.1rem
     border-bottom: 2px solid $main-color
     padding-bottom: 10px
     span
       display: block
   ul
+    margin-bottom: 0px
     span
       color: $main-color
     li
       margin-bottom: 5px
-      +min-w48
-        margin-bottom: 10px
+      // +min-w48
+      //   margin-bottom: 10px
     ul
       padding-left: 43px
+
+.item-row
+  margin-left: 0px
+  margin-bottom: 5px
+  display: block
+  .item
+    display: block
+    margin-left: 5px
+    +min-w40
+      display: inline-flex
+.title-item
+  color: rgba(247, 181, 22, 0.73)
+  font-weight: 900
+  letter-spacing: 0.1rem
+.info-item
+  margin: 0 0 0px 5px
+
+
 
 .slick-dots
   display: block
