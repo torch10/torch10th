@@ -297,13 +297,16 @@ p
 .box-title
   font-family: "Playfair Display", serif
   background: url(../images/bg-title.png) no-repeat
-  min-height: 135px
+  min-height: 115px
+  margin: 10px 0
   padding: 10px 0 0 20px
-  margin-top: 0
   +min-w40
     margin-top: 30px
     padding: 25px 0 0 20px
-
+  span
+    display: block
+  .title
+    margin-top: 10px
 
 .box-content
   text-align: justify
@@ -331,6 +334,8 @@ p
     line-height: 1.4
     border-bottom: 2px solid $main-color
     padding-bottom: 10px
+    span
+      display: block
   ul
     span
       color: $main-color
@@ -377,6 +382,9 @@ p
 .box-read-footer
   margin: 3rem 0
 
+.box-read:nth-child(2)
+  margin-bottom: 3rem
+
 .box-buy
   margin-top: 25px
   .title
@@ -385,8 +393,12 @@ p
     background-image: url(../images/banner-06.jpg)
     background-color: #fefdf8
     background-size: cover !important
-    background-position: center
-    min-height: 280px !important
+    background-position: 100% 40%
+    min-height: 220px !important
+  p
+    margin-top: 20px
+    color: #fff
+    font-size: 1.6rem
 
 //slideshow
 .single-item
